@@ -58,7 +58,7 @@ document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', 
 }));
 
 // ===== TYPEWRITER =====
-const roles = ['Full Stack Developer', 'AI & IoT Enthusiast', 'UI/UX Designer', 'Eye for Detail'];
+const roles = ['Full Stack Developer', 'AI Enthusiast', 'UI/UX Designer', 'Eye for Detail'];
 let rIdx = 0, cIdx = 0, deleting = false;
 const roleEl = document.getElementById('roleText');
 
