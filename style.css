@@ -175,6 +175,9 @@ img{max-width:100%}
 .certs-grid{display:flex;flex-direction:column;gap:16px}
 .cert-card{display:flex;align-items:center;gap:20px;background:var(--surface);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:20px 24px;transition:all .3s}
 .cert-card:hover{border-color:rgba(108,99,255,.3);transform:translateX(6px);background:var(--surface2)}
+.cert-view{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;color:var(--accent);margin-top:6px;font-weight:500;opacity:0;transition:opacity .3s}
+.cert-card:hover .cert-view{opacity:1}
+a.cert-card{text-decoration:none;cursor:pointer}
 .cert-icon{width:52px;height:52px;border-radius:14px;background:rgba(108,99,255,.12);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--accent);flex-shrink:0}
 .cert-body{flex:1}
 .cert-org{font-size:.75rem;font-weight:600;color:var(--accent3);text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:4px}
