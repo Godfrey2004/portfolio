@@ -76,7 +76,7 @@ img { max-width: 100%; }
 /* ===== HERO VISUAL ===== */
 .hero-visual { flex: 0 0 500px; height: 500px; display: flex; align-items: center; justify-content: center; position: relative; }
 spline-viewer { width: 100%; height: 100%; border-radius: 20px; overflow: hidden; background: transparent; }
-
+spline-viewer::part(logo) { display: none !important; }
 
 .avatar-ring, .ring-svg, .floating-badge, .scroll-indicator { display: none !important; }
 
