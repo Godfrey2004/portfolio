@@ -119,17 +119,16 @@ spline-viewer::part(logo) { display: none !important; }
 .interest-tag i { font-size: .9rem; color: var(--text2); }
 
 /* ===== TIMELINE ===== */
-.timeline-wrapper { display: flex; flex-direction: column; position: relative; padding-left: 44px; }
-.timeline-wrapper::before { content: ''; position: absolute; left: 15px; top: 0; bottom: 0; width: 1px; background: var(--border); }
+.timeline-wrapper { display: flex; flex-direction: column; position: relative; padding-left: 60px; }
+.timeline-wrapper::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 1px; background: var(--border); }
 .timeline-block { display: flex; gap: 24px; position: relative; margin-bottom: 24px; }
-.timeline-icon { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .75rem; flex-shrink: 0; position: absolute; left: -44px; top: 0; border: 1px solid var(--border); }
+.timeline-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; position: absolute; left: -60px; top: 0; border: 1px solid var(--border); }
 .exp-icon, .edu-icon { background: var(--text); color: #fff; border-color: var(--text); }
 .timeline-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; width: 100%; transition: border-color .15s; }
 .timeline-card:hover { border-color: #aaa; transform: none; box-shadow: none; }
 .timeline-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
 .tl-badge { font-size: .68rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: .08em; }
-.exp-badge { background: #111; color: #fff; }
-.edu-badge { background: var(--border); color: var(--text2); }
+.exp-badge, .edu-badge { background: #111; color: #fff; }
 .tl-date { font-size: .8rem; color: var(--text3); display: flex; align-items: center; gap: 6px; }
 .timeline-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
 .timeline-card h4 { font-size: .86rem; color: var(--text2); margin-bottom: 12px; }
