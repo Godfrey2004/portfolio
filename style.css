@@ -123,8 +123,7 @@ spline-viewer::part(logo) { display: none !important; }
 .timeline-wrapper::before { content: ''; position: absolute; left: 15px; top: 0; bottom: 0; width: 1px; background: var(--border); }
 .timeline-block { display: flex; gap: 24px; position: relative; margin-bottom: 24px; }
 .timeline-icon { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .75rem; flex-shrink: 0; position: absolute; left: -44px; top: 0; border: 1px solid var(--border); }
-.exp-icon { background: var(--text); color: #fff; border-color: var(--text); }
-.edu-icon { background: var(--bg2); color: var(--text2); }
+.exp-icon, .edu-icon { background: var(--text); color: #fff; border-color: var(--text); }
 .timeline-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; width: 100%; transition: border-color .15s; }
 .timeline-card:hover { border-color: #aaa; transform: none; box-shadow: none; }
 .timeline-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
