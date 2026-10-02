@@ -137,8 +137,8 @@ img{max-width:100%}
 .timeline-wrapper::before{content:'';position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent),var(--accent3))}
 .timeline-block{display:flex;gap:24px;position:relative;margin-bottom:32px}
 .timeline-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;position:absolute;left:-48px;top:0;border:2px solid var(--bg)}
-.exp-icon{background:linear-gradient(135deg,#6c63ff,#a78bfa)}
-.edu-icon{background:linear-gradient(135deg,#38bdf8,#6c63ff)}
+.exp-icon{background:var(--grad);color:#fff}
+.edu-icon{background:var(--grad);color:#fff}
 .timeline-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;width:100%;transition:all .3s;box-shadow:0 2px 10px rgba(15,23,42,0.03)}
 .timeline-card:hover{border-color:rgba(59,130,246,.3);transform:translateX(6px);box-shadow:0 8px 24px rgba(15,23,42,0.06)}
 .timeline-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px}
