@@ -26,7 +26,7 @@ img { max-width: 100%; }
 /* ===== SECTION HEADINGS ===== */
 .section-header { text-align: center; margin-bottom: 56px; }
 .section-tag { font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); display: inline-block; margin-bottom: 12px; }
-.section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; color: var(--text); }
+.section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; color: var(--text) !important; background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: var(--text) !important; background-clip: unset !important; }
 
 /* ===== HIDE ANIMATED ELEMENTS ===== */
 .bg-animation, .orb, .cursor, .cursor-trail { display: none !important; }
@@ -48,7 +48,7 @@ img { max-width: 100%; }
 .hero-badge { display: none; }
 .badge-dot { display: none; }
 .hero-name { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 800; line-height: 1.08; color: var(--text); margin-bottom: 20px; }
-.hero-name .line-reveal { display: block; opacity: 1 !important; transform: none !important; animation: none !important; color: var(--text); -webkit-text-fill-color: var(--text); background: none; }
+.hero-name .line-reveal { display: block; opacity: 1 !important; transform: none !important; animation: none !important; color: var(--text) !important; -webkit-text-fill-color: var(--text) !important; background: none !important; -webkit-background-clip: unset !important; background-clip: unset !important; }
 .hero-name .delay-1 { animation: none !important; }
 .hero-roles { font-size: 1.1rem; font-weight: 400; color: var(--text2); margin-bottom: 20px; min-height: 1.8rem; }
 .cursor-blink { color: var(--text); }
@@ -57,11 +57,11 @@ img { max-width: 100%; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
 
 /* ===== BUTTONS ===== */
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 6px; font-weight: 600; font-size: .9rem; cursor: pointer; border: none; transition: background .15s, color .15s, border-color .15s; }
-.btn-primary { background: var(--text); color: #ffffff; border: 1.5px solid var(--text); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 6px; font-weight: 600; font-size: .9rem; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.btn-primary { background: #111111; color: #ffffff !important; border: 1.5px solid #111111; -webkit-text-fill-color: #ffffff !important; }
 .btn-primary:hover { background: #333; border-color: #333; transform: none; box-shadow: none; }
-.btn-ghost { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
-.btn-ghost:hover { border-color: var(--text); color: var(--text); background: transparent; }
+.btn-ghost { background: transparent; color: var(--text) !important; border: 1.5px solid #d1d5db; -webkit-text-fill-color: var(--text) !important; }
+.btn-ghost:hover { border-color: var(--text); background: transparent; }
 .btn-full { width: 100%; justify-content: center; }
 
 /* ===== HERO STATS ===== */
@@ -73,11 +73,12 @@ img { max-width: 100%; }
 
 /* ===== HERO VISUAL ===== */
 .hero-visual { flex: 0 0 360px; display: flex; align-items: center; justify-content: center; }
-.avatar-ring { position: relative; width: 260px; height: 260px; display: flex; align-items: center; justify-content: center; }
+.avatar-ring { position: relative; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; }
 .avatar-inner { width: 160px; height: 160px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
-.avatar-icon { font-size: 3.2rem; color: var(--text2); background: none; -webkit-text-fill-color: var(--text2); }
-.ring-svg { display: none; }
-.floating-badge { display: none; }
+.avatar-icon { font-size: 3.2rem; color: var(--text2) !important; background: none !important; -webkit-text-fill-color: var(--text2) !important; }
+.ring-svg { display: none !important; }
+.floating-badge { display: none !important; }
+.scroll-indicator { display: none !important; }
 .scroll-indicator { display: none; }
 
 /* ===== ABOUT ===== */
