@@ -58,7 +58,7 @@ document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', 
 }));
 
 // ===== TYPEWRITER =====
-const roles = ['AI & Computer Vision Developer', 'Deep Learning Engineer', 'Edge AI Specialist', 'Problem Solver'];
+const roles = ['AI Developer', 'Computer Vision Engineer', 'Software Developer'];
 let rIdx = 0, cIdx = 0, deleting = false;
 const roleEl = document.getElementById('roleText');
 
