@@ -1,28 +1,4 @@
-// ===== CUSTOM CURSOR =====
-const cursor = document.getElementById('cursor');
-const trail = document.getElementById('cursorTrail');
-let mouseX = 0, mouseY = 0, trailX = 0, trailY = 0;
-
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX; mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
-});
-
-function animateTrail() {
-  trailX += (mouseX - trailX) * 0.12;
-  trailY += (mouseY - trailY) * 0.12;
-  trail.style.left = trailX + 'px';
-  trail.style.top = trailY + 'px';
-  requestAnimationFrame(animateTrail);
-}
-animateTrail();
-
-document.querySelectorAll('a,button,.btn,.project-card,.cert-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(2.5)'; cursor.style.background = 'transparent'; cursor.style.border = '2px solid var(--accent)'; });
-  el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; cursor.style.background = 'var(--accent)'; cursor.style.border = 'none'; });
-});
-
+// ===== CUSTOM CURSOR REMOVED FOR CLEANER EXPERIENCE =====
 // ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
