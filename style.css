@@ -74,47 +74,9 @@ img { max-width: 100%; }
 
 
 /* ===== HERO VISUAL ===== */
-.hero-visual { flex: 0 0 420px; display: flex; align-items: center; justify-content: center; }
-.hv-wrap { position: relative; width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; }
+.hero-visual { flex: 0 0 500px; height: 500px; display: flex; align-items: center; justify-content: center; position: relative; }
+spline-viewer { width: 100%; height: 100%; border-radius: 20px; overflow: hidden; background: transparent; }
 
-/* Central circle */
-.hv-circle {
-  width: 180px; height: 180px; border-radius: 50%;
-  background: var(--accent);
-  display: flex; align-items: center; justify-content: center;
-  animation: hvPulse 4s ease-in-out infinite;
-  box-shadow: 0 0 0 20px rgba(37,99,235,0.08), 0 0 0 40px rgba(37,99,235,0.04);
-}
-.hv-center-badge {
-  position: relative;
-  z-index: 10;
-  padding: 10px 20px;
-  font-size: .95rem;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
-}
-@keyframes hvPulse {
-  0%, 100% { box-shadow: 0 0 0 12px rgba(37,99,235,0.08), 0 0 0 28px rgba(37,99,235,0.04); }
-  50% { box-shadow: 0 0 0 20px rgba(37,99,235,0.1), 0 0 0 40px rgba(37,99,235,0.05); }
-}
-
-/* Floating badges */
-.hv-badge {
-  position: absolute; display: flex; align-items: center; gap: 7px;
-  background: #fff; border: 1px solid var(--border);
-  border-radius: 50px; padding: 7px 14px;
-  font-size: .78rem; font-weight: 600; color: var(--text);
-  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
-  white-space: nowrap;
-}
-.hv-badge i { color: var(--accent); font-size: .85rem; }
-.hv-b1 { top: 10px; left: -10px; animation: floatY 4s ease-in-out infinite; }
-.hv-b2 { top: 10px; right: -10px; animation: floatY 4s ease-in-out infinite; animation-delay: 1s; }
-.hv-b3 { bottom: 56px; left: -20px; animation: floatY 4s ease-in-out infinite; animation-delay: 2s; }
-.hv-b4 { bottom: 56px; right: -20px; animation: floatY 4s ease-in-out infinite; animation-delay: 3s; }
-@keyframes floatY {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
 
 .avatar-ring, .ring-svg, .floating-badge, .scroll-indicator { display: none !important; }
 
